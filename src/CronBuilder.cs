@@ -1,5 +1,6 @@
 ﻿using Soenneker.Cron.Builder.Abstract;
 using System;
+using Soenneker.Enums.DayOfWeek;
 using Soenneker.Extensions.String;
 
 namespace Soenneker.Cron.Builder;
@@ -59,7 +60,7 @@ public class CronBuilder : ICronBuilder
         return this;
     }
 
-    public ICronBuilder OnDayOfWeek(DayOfWeek day)
+    public ICronBuilder OnDayOfWeek(DayOfWeekType day)
     {
         _dayOfWeek = day.ToString().ToUpperInvariantFast()[..3]; // MON, TUE, etc.
         return this;

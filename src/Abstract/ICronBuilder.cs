@@ -1,4 +1,5 @@
 ﻿using System;
+using Soenneker.Enums.DayOfWeek;
 
 namespace Soenneker.Cron.Builder.Abstract;
 
@@ -47,7 +48,7 @@ public interface ICronBuilder
     /// </summary>
     /// <param name="day">The day of the week (e.g., DayOfWeek.Monday).</param>
     /// <returns>The current builder instance.</returns>
-    ICronBuilder OnDayOfWeek(DayOfWeek day);
+    ICronBuilder OnDayOfWeek(DayOfWeekType day);
 
     /// <summary>
     /// Sets the day of week field using a custom 3-letter cron day string (e.g., "MON", "FRI").
