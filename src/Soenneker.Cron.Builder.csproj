@@ -42,7 +42,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Enums.DayOfWeek" Version="3.0.671" />
+        <PackageReference Include="Soenneker.Enums.DayOfWeek" Version="3.0.672" />
         <PackageReference Include="Soenneker.Extensions.String" Version="3.0.480" />
     </ItemGroup>
 </Project>
