@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Cron.Builder.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Cron.Builder\Soenneker.Cron.Builder.csproj" />
     </ItemGroup>
 
     <ItemGroup>
