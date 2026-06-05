@@ -186,6 +186,10 @@ public sealed class CronBuilder : ICronBuilder
         });
     }
 
+    /// <summary>
+    /// Returns a string representation of the current instance.
+    /// </summary>
+    /// <returns>The result of the operation.</returns>
     public override string ToString() => Build();
 
     // -------------------
