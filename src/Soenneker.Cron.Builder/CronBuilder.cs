@@ -6,7 +6,6 @@ using System.Runtime.CompilerServices;
 
 namespace Soenneker.Cron.Builder;
 
-/// <inheritdoc cref="ICronBuilder"/>
 public sealed class CronBuilder : ICronBuilder
 {
     private bool _hasSeconds;
@@ -31,7 +30,7 @@ public sealed class CronBuilder : ICronBuilder
     private enum DowMode : byte { Any, Weekdays, FixedToken, Custom }
     private DowMode _dowMode = DowMode.Any;
 
-    private DayOfWeekType _dowValue;
+    private DayOfWeekType _dowValue = DayOfWeekType.Monday;
     private string? _customDowUpper;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
