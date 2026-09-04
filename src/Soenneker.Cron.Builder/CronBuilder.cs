@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Soenneker.Cron.Builder;
 
+/// <inheritdoc cref="ICronBuilder" />
 public sealed class CronBuilder : ICronBuilder
 {
     private bool _hasSeconds;
