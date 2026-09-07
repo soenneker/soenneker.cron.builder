@@ -208,7 +208,7 @@ public sealed class CronBuilder : ICronBuilder
         MinuteMode.Fixed0 => 1,           // "0"
         MinuteMode.Any => 1,              // "*"
         MinuteMode.Fixed => DigitLen(v),  // "5" / "15"
-        MinuteMode.Interval => 2 + 1 + DigitLen(v), // "*/" + digits
+        MinuteMode.Interval => 2 + DigitLen(v), // "*/" + digits
         _ => 1
     };
 
@@ -217,7 +217,7 @@ public sealed class CronBuilder : ICronBuilder
     {
         HourMode.Any => 1,
         HourMode.Fixed => DigitLen(v),
-        HourMode.Interval => 2 + 1 + DigitLen(v), // "*/" + digits
+        HourMode.Interval => 2 + DigitLen(v), // "*/" + digits
         _ => 1
     };
 
